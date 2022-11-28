@@ -1,6 +1,13 @@
-import static org.junit.Assert.*;
-import org.junit.*;
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertSame;
+import org.junit.Test;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TestListExamples {
-  // Write your grading tests here!
+  
+  @Test(timeout=100)
+  public void testFilter(){
+    StringChecker sc = s1 -> s1.contains("Hello");
+  }
 }
